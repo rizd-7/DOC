@@ -1,0 +1,67 @@
+:root {
+    /* COLORS */
+    --BgColor:#F1F1F1;
+    --Prim_0:#52B788;
+    --TextColor:#2D3047;
+    --BoxesGrey:#E9E9E9;
+    --LinkBlue:#4132C8;
+    --CallToActionOrange:#DE3116;
+    --green-dark: #0f5132;
+    --red-dark: #842029;
+    --LinerGrey:#9193A6;
+    --sec0:#22264C;
+    /* Fonts */
+    --HeadingType1Font:'Maven Pro' , sans-serif;
+    --HeadingType2Font:'Bebas Neue', sans-serif;
+    --TextFont: 'sans source pro', sans-serif;
+    /* Others */
+    --letterSpacing: 1px;
+    --transition: 0.3s ease-in-out all;
+    --shadow-1:0 8px 60px 5px  rgba(0, 0, 0, 0.226);
+    
+  }
+
+.AboutUser{
+    display:flex;
+    flex-direction: column;
+    margin-left: 100px;
+    width: fit-content;
+    height: fit-content;
+    position:fixed;
+    top: 15em;
+    background-color: white;
+    border:1px solid black;
+}
+
+.AboutUser h5{
+    font-weight: bold;
+    font-family:var(--HeadingType1Font);
+    margin-bottom:0.5em;
+    padding: 0.7em 1em; 
+}
+
+.AboutUser a{
+    display: flex;
+    align-items: center;
+    height: 2em;
+    padding: 0.3em;
+    padding: 0.7em 1em; 
+}
+
+.AboutUser a:hover{
+    color: var(--BgColor);
+     background-color: var(--Prim_0);
+}
+
+.hide{
+    display: none;
+}
+
+.profil:hover{
+    box-shadow: 0 0px 10px 1px  rgb(30, 255, 0);
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+

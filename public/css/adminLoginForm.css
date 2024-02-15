@@ -1,0 +1,166 @@
+
+:root {
+     /* COLORS */
+     --BgColor:#F1F1F1;
+     --Prim_0:#52B788;
+     --TextColor:#2D3047;
+     --BoxesGrey:#E9E9E9;
+     --LinkBlue:#4132C8;
+     --CallToActionOrange:#DE3116;
+     --green-dark: #0f5132;
+     --red-dark: #842029;
+     /* Fonts */
+     --HeadingType1Font:'Maven Pro' , sans-serif;
+     --HeadingType2Font:'Bebas Neue', sans-serif;
+     --TextFont: 'sans source pro', sans-serif;
+     /* Others */
+     --letterSpacing: 1px;
+     --transition: 0.3s ease-in-out all;
+     --shadow-1:0 8px 60px 5px  rgba(0, 0, 0, 0.226);
+     
+ }
+
+ body{
+     height: 100vh;
+ }
+
+.content{
+     background-image: url('../assets/wallpaperflare.com_wallpaper.jpg') ;
+     display: flex;
+     justify-content: center;     
+     height: 100%;
+     padding: 100px;
+     height: 78vh;
+}
+
+form{
+     margin: auto;
+     width: fit-content;
+     height: fit-content;
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+     box-sizing: border-box;
+     width: 100%;
+     position: relative;
+      
+ }
+
+
+.form{
+     
+     background-size: cover;  
+     width: 600px;
+     min-width: 400px;
+     height: fit-content;
+     padding: 1.5em;
+     border:4px solid var(--BgColor);
+     display: flex;
+     flex-direction: column;    
+}
+
+.form  h1{
+     font-family: var(--HeadingType2Font);
+     letter-spacing: 3px;
+     color: var(--BgColor);
+     font-weight: bold;
+     font-size: 50px;
+    
+     margin: 0.5em;
+}
+
+form  input{
+     width: 80%;
+     height: 30px;
+     border-bottom:2px solid rgb(41, 147, 196);
+     background-color:  rgba(0, 0, 0, 0.205);
+     font-weight: bold;
+     font-family: var(--TextFont);
+     color: var(--BgColor);
+     padding-left:2em ;
+}
+
+button{
+
+     width:150px;
+     height: 2em;
+     background-color: rgb(255, 166, 2);
+     padding: 0.3em ;
+     border-radius: 30px;
+     color: var(--BgColor);
+}
+
+.inputBox{
+     display: flex;
+     align-items: center;
+     position: relative;
+}
+
+
+button::first-line {
+     font-size: 20px;
+     letter-spacing: 2px;
+     font-family: var(--HeadingType2Font);
+   }
+
+button:hover{
+     padding: 0.4em ;
+     border: none;
+     cursor: pointer;
+}
+ 
+form  span {
+     position: absolute;
+     left: 2em;
+      font-family: var(--TextFont);
+      font-weight: bold;
+      color: rgba(202, 202, 202, 0.678);
+      pointer-events: none;
+}
+
+.inputBox input:focus ~ span
+{
+     transition: var(--transition);
+}
+ 
+.logo{  
+     text-align: center;
+     margin-bottom: 2.5em;
+}
+
+.logo > img{
+     width: 300px;
+}
+
+label{
+     color: rgb(167, 3, 3);
+     font-weight:bold;
+     font-family: serif;
+      
+     margin-bottom: 2em;
+ }
+
+
+.btnSet2 {
+     display: flex;
+     align-items: center;
+     gap: 1.5em;
+}
+
+.btnSet2 a{
+     border:3px solid rgb(255, 255, 255);
+     padding: 0.2em 1.2em;
+     border-radius: 30px;
+     color: var(--BgColor);
+     font-family: var(--TextFont);
+     font-weight: bold;     
+}
+
+a{
+     text-decoration: none;
+}
+
+.btnSet2 a:hover{
+     cursor: pointer; 
+     border:3px solid rgb(168, 187, 250);   
+}

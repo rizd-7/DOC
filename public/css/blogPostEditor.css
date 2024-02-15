@@ -1,0 +1,32 @@
+
+.blogForm{
+   display: flex;
+   flex-direction: column;
+   justify-content: center; 
+   gap: 8px;
+   width: 90%;
+   margin: auto;
+   margin-top: 2em;
+}
+
+.blogForm input{
+    height: 2em;
+    padding: 1em;
+    margin-bottom: 1.5em;
+}
+.blogForm p{
+    margin: 0;
+     
+}
+
+.blogForm button{
+    border:1px solid black;
+    font-weight: bold;
+    background-color: rgb(94, 255, 88);
+    width: fit-content;
+    margin: auto;
+    margin-top: 1.5em;
+    padding: 0.2em 1em;
+
+}
+ 

@@ -1,0 +1,27 @@
+
+:root {
+    /* COLORS */
+    --BgColor:#F1F1F1;
+    --Prim_0:#52B788;
+    --TextColor:#2D3047;
+    --BoxesGrey:#E9E9E9;
+    --LinkBlue:#4132C8;
+    --CallToActionOrange:#DE3116;
+    --green-dark: #0f5132;
+    --red-dark: #842029;
+    /* Fonts */
+    --HeadingType1Font:'Maven Pro' , sans-serif;
+    --HeadingType2Font:'Bebas Neue', sans-serif;
+    --TextFont: 'sans source pro', sans-serif;
+    /* Others */
+    --letterSpacing: 1px;
+    --transition: 0.3s ease-in-out all;
+    --shadow-1:0 8px 60px 5px  rgba(0, 0, 0, 0.226);
+    
+}
+ 
+
+ 
+
+
+

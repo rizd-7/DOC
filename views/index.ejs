@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Maven+Pro:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+ 
+<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+<link rel="stylesheet" type="text/css"  href="./css/index.css">
+<link rel="stylesheet"  href="./dist/output.css">
+
+ 
+    <title>Doc</title>
+</head>
+<body>
+  
+  <!-- Header nav Bar -->
+  <div class="navBarWrapper">
+    <div class="navBarCenter">
+
+      <div class="nav_header">
+        
+        <a href="index.html" class="nav-logo">
+          <img class="logo" src="./assets/logo.png" alt="logo">
+        </a>
+        
+        <div class="space-y-2">
+          <div class="w-8 h-0.5  border-2 border-black rounded-sm "></div>
+          <div class="w-8 h-0.5  border-2 border-black rounded-sm"></div>
+          <div class="w-8 h-0.5  border-2 border-black rounded-sm"></div>
+        </div>
+
+      </div>
+
+      <div class="nav_links">
+
+        <a href="/" class="Border" > Main </a>
+        <a href="/blog?mess=all" class="Border" > Blog </a>
+        <a href="#scrollToProgram" class="Border" > Horaires </a>
+        <a href="/renseignement"> Renseignement </a>
+        
+        <div class="nav_link contact_link">
+          <a href="contact.html" class="btn"> contact nous </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+      <!-- END header Nav bar  -->
+
+      <!-- BodyContent -->
+        <div class="bodyContentMain">
+
+        <!-- 1 -->
+
+          <div class="heroSectionWrapper">
+            <div class="heroSection">
+
+              <div class="contentHero">
+               <div class="textHero">
+                <h1>Docteur YALA vous acompagne</h1>
+                <h5 class="Heroh5">Medecin neurologue avec 20ans d’experience professionelle</h5>
+                <p>On s’est donné pour mission de vous soutenir avec expertise et compasion dans vos besoins neurologiques , Consulez chez nous ,Contactez nous  </p>
+               </div>
+
+               <div class="buttonSetHero">
+                <button class="contactHero">CONTACT</button>
+                <button class="renseignement">RENSEIGNEMENT</button>
+               </div>
+              </div>  
+            
+              <div class="imageSetHero">
+                <img class="img1" src="./assets/couldBeAnypicture.png" alt="couldBeAnypicture">
+                <img class="img2" src="./assets/shape1.png" alt="Shape1Hero">
+              </div>
+
+            </div>
+
+            <div class="HeroDeco1"></div>
+          </div>
+
+        <!-- 2 -->
+
+          <div class="introdutionWrapper">
+            <div class="introductionCenter">
+
+              <div class="headingIntroduction">
+                <h3>introduction</h3>
+                <h2>NEUROLOGIE VULGARISÉE </h2>
+              </div>
+              <div class="textContentIntroduction">
+                <p class="p1Intro">  La neurologie est une spécialité médicale s'intéressant au fonctionnement et aux maladies des systèmes nerveux central (cerveau et moelle épinière) et périphérique (nerfs crâniens et nerfs des membres). Elle traite également du système nerveux autonome, responsable des fonctions involontaires du corps, telles que la régulation du rythme cardiaque, de la digestion et d'autres processus qui ne sont pas soumis à un contrôle volontaire.</p>
+                <p class="p2Intro">Notre établissement assure des consultations de diagnostiques et propose un suivis a long ou court term jusqu’a ce que vos besoin soit répondu  </p>
+                <button>VOS QUESTIONS LES PLUS FRÉQUENTES</button>
+              </div>
+              
+
+            </div>
+
+          </div>
+
+         <!-- 3 -->
+        <a name="scrollToProgram"></a>
+        <br>
+        <br>
+         
+
+
+        <div class="programWrapper">   
+               
+          <div class="proram_note">
+
+            <div class="mainprogrambox">
+
+              <div class="dayprogram">
+                <p>Dimanche</p>
+                <p class="DimancheStatus"><%=dimanche %></p>
+              </div>
+  
+              <hr>
+  
+              <div class="dayprogram">
+                <p>Lundi</p>
+                <p class="LundiStatus"><%=lundi  %></p>
+              </div>
+  
+              <hr>
+  
+              <div class="dayprogram">
+                <p>Mardi</p>
+                <p class="MardiStatus"><%=mardi   %></p>
+              </div>
+  
+              <hr>
+  
+              <div class="dayprogram">
+                <p>Mercredi</p>
+                <p class="MercrediStatus"><%=mercredi   %></p>
+              </div>
+  
+              <hr>
+  
+              <div class="dayprogram">
+                <p>Jeudi</p>
+                <p class="JeudiStatus"><%=jeudi   %></p>
+              </div>
+  
+              <hr>
+  
+              <div class="dayprogram">
+                <p>Vendredi</p>
+                <p class="VendrediStatus"><%=vendredi %></p>
+              </div>
+  
+              <hr>
+  
+              <div class="dayprogram">
+                <p>Samedi</p>
+                <p class="SamediStatus"><%=samedi %></p>
+              </div>
+
+              <hr>
+  
+            </div>
+
+
+            <div class="doctorNote">
+              <h4>Note du Docteur</h4>
+              <p><%=texts[0] %></p>
+            </div>
+          </div>
+
+        </div>
+        
+      <!-- 4 -->
+
+      <div class="serviceGridWrapper">
+
+        <div class="servicesGridCenter">
+          <div class="headingServices">
+            <h3>services</h3>
+            <h2>VOILA COMMENT ON PEUT VOUS AIDER </h2>
+          </div>
+          
+          <div class="serviceGrid">
+
+            <div class="service_topGrad">
+              <div class="topgrad1"></div>
+              <div class="service service1">
+                <h3>consultations et suivis</h3>
+                <p> On vous popose des consultations et un diagonstique  au niveau de notre cabinet medical ,Profestionalisme compation et altroisme c’est ce qu’on tien vous ofrir , </p>
+                <a href="/blog?mess=654373deee4979a40f16388d" class="voirPlus">voir plus +</a>
+            </div>
+            </div>
+            
+            <div class="service_topGrad">
+              <div class="topgrad2"></div>
+             <div class="service service2">
+                <h3>Radio musculaire</h3>
+                <p> On vous popose des consultations et un diagonstique  au niveau de notre cabinet medical ,Profestionalisme compation et altroisme c’est ce qu’on tien vous ofrir , </p>
+                <a href="/blog?mess=6543755f204ff8d83d81dfd1" class="voirPlus">voir plus +</a>
+            </div>
+            </div>
+
+
+            
+            <div class="service_topGrad">
+              <div class="topgrad3"></div>
+              <div class="service service3"> 
+                <h3>consultations et suivis</h3>
+                <p> On vous popose des consultations et un diagonstique  au niveau de notre cabinet medical ,Profestionalisme compation et altroisme c’est ce qu’on tien vous ofrir , </p>
+                <a href="/blog?mess=654375c9204ff8d83d81dfe3" class="voirPlus">voir plus +</a>
+            </div>
+            </div>
+
+            
+            <div class="service_topGrad">
+              <div class="topgrad4"></div>
+              <div class="service service4">
+                <h3>Radio musculaire</h3>
+                <p> On vous popose des consultations et un diagonstique  au niveau de notre cabinet medical ,Profestionalisme compation et altroisme c’est ce qu’on tien vous ofrir , </p>
+                <a href="/blog?mess=654375d4204ff8d83d81dfe6" class="voirPlus">voir plus +</a>
+            </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 5 -->
+
+      <div class="RenseigementWrapper">
+
+        <h3>RENSEIGNEZ VOUS, TROUVEZ NOUS FACILEMENT</h3>
+        <p>adresse, localisation et plus</p>
+        <button>RENSEIGNEMENT</button>
+
+      </div>
+      
+      <!-- 6 -->
+
+      <div class="discoverWrapper">
+        <div class="discoverCenter">
+
+          <div class="headingdiscover">
+            <h3>Découverte</h3>
+            <h2>FAISONS CONNAISSANCE !</h2>
+          </div>
+
+          <div class="textContentDiscover">
+            <p>basée a medea a l’adresse (adresse) depuis 2004 soite 19ans de pratique dans lesquelles notre docteur a su affiner et perfectionner  ses thechniques de diagnostiques et de traitement  ... ( flou-lire plus-point sur l’historique- contenue caché)</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero magni praesentium amet voluptas neque,
+               placeat id eveniet tenetur laborum qui facilis quo aliquam, tempore quasi aut iure eos voluptate maxime!
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, ullam doloribus tempora repudiandae, 
+               numquam enim modi repellat, atque laudantium tenetur facilis libero velit incidunt sequi unde! Exercitationem 
+               a maiores dolore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa modi labore blanditiis maiores, et fugit, dolor nisi ù
+              tempora optio molestiae recusandae dignissimos numquam quia, voluptatem omnis autem maxime obcaecati cumque.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero magni praesentium amet voluptas neque,
+              placeat id eveniet tenetur laborum qui facilis quo aliquam, tempore quasi aut iure eos voluptate maxime!
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, ullam doloribus tempora repudiandae, 
+              numquam enim modi repellat, atque laudantium tenetur facilis libero velit incidunt sequi unde! Exercitationem</p>
+          </div>
+          <button>Lire la suite</button>
+
+        </div>
+      </div>
+      </div>
+      <!-- ENd BodyContent -->
+
+
+
+      <!-- FOOTER -->
+
+      <div class="footer">
+        <div class="footerCenter">
+
+         <div class="recapInfo">
+
+          <div class="part1Grid">
+            <h5 class="item  itemtop"><a href="/">MAIN</a></h5>
+            <h5 class="item  itemtop"><a href="#">PROGRAMME HEBDOMADAIRE</a></h5>
+            <h5 class="item "><a href="/blog">ON CE QUI NOUS CONCERNE</a></h5>
+            <h5 class="item "><a href="/renseignement">RENSEIGNEMENT</a></h5>
+
+            
+            <div class="contact">
+              <div class="centerContact">
+                <h5>CONTACT</h5>
+                <p>02 43 12 03 33</p>
+                <p>02 43 43 12 33</p>
+                <p>02 12 33 12 43</p>
+                <p>yalamed@gmail.com</p>
+              </div>
+            </div>
+           
+            <div class="adresse">
+              <div class="centerAdresse">
+               <h5>ADRESSE</h5>
+               <p>01 Bvd Abd EL Rahmaan laala - EL Madania </p>
+              </div>
+            </div>
+           
+          </div>
+          <hr>
+          <div class="part2">
+            <div class="logoFooter">
+              <a href="/index.html"><img src="./assets/logo.png" alt="logo"></a> 
+             </div>
+             <div class="textFooter">
+               <p>(c) Copyright Yala mohand salah 2022. All rights reserved.</p>
+             </div>
+          </div>
+         </div>
+         <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3217.0820907973366!2d2.755896074762302!3d36.26178589786651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128f6b9ae146cf03%3A0x461f8001ddb3bf4c!2sDr%20YALA.%20M.%20S!5e0!3m2!1sen!2sdz!4v1691336433871!5m2!1sen!2sdz" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="responsiveFooter">
+
+          <div class="part1Grid ">
+            <h5 class="item  itemtop"><a href="/">MAIN</a></h5>
+            <h5 class="item  itemtop"><a href="#">PROGRAMME HEBDOMADAIRE</a></h5>
+            <h5 class="item "><a href="/blog">ON CE QUI NOUS CONCERNE</a></h5>
+            <h5 class="item "><a href="/renseignement">RENSEIGNEMENT</a></h5> 
+          </div>
+
+          <hr>
+
+          <div class="adresse">
+            <div class="centerAdresse">
+             <h5>ADRESSE</h5>
+             <p>01 Bvd Abd EL Rahmaan laala - EL Madania </p>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="centerContact">
+              <h5>CONTACT</h5>
+              <p>02 43 12 03 33</p>
+              <p>02 43 43 12 33</p>
+              <p>02 12 33 12 43</p>
+              <p>yalamed@gmail.com</p>
+            </div>
+          </div>
+         
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3217.0820907973366!2d2.755896074762302!3d36.26178589786651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128f6b9ae146cf03%3A0x461f8001ddb3bf4c!2sDr%20YALA.%20M.%20S!5e0!3m2!1sen!2sdz!4v1691336433871!5m2!1sen!2sdz" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <hr>
+          
+          <div class="part2">
+            <div class="logoFooter">
+              <a href="/"><img src="./assets/logo.png" alt="logo"></a> 
+             </div>
+             <div class="textFooterv2">
+               <p>(c) Copyright Yala mohand salah 2022. All rights reserved.</p>
+             </div>
+          </div>
+
+          </div>
+        </div>
+
+      </div>
+ 
+      <!-- END FOOTER -->    
+    <script src="/responsiveJS.js"></script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Maven+Pro:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css"> 
+    <link rel="stylesheet"   href="./css/index.css">  
+    <link rel="stylesheet"   href="./css/adminPanel.css">  
+    <link rel="stylesheet"  href="./dist/output.css">
+
+    <title>adminPanel</title>
+</head>
+<body>
+
+     <!-- Header nav Bar -->
+   
+     <div class="navBarWrapper">
+        <div class="navBarCenter">
+
+          <div class="nav_header">
+            
+            <a href="/" class="nav-logo">
+              <img class="logo" src="./assets/logo.png" alt="logo">
+            </a>
+            
+            <div class="space-y-2">
+              <div class="w-8 h-0.5  border-2 border-black rounded-sm "></div>
+              <div class="w-8 h-0.5  border-2 border-black rounded-sm"></div>
+              <div class="w-8 h-0.5  border-2 border-black rounded-sm"></div>
+            </div>
+
+          </div>
+
+          <div class="nav_links">
+
+            <a href="/" class="Border" > Main </a>
+            <a href="/blog" class="Border" > Blog </a>
+            <a href="#" class="Border" > Horaires </a>
+            <a href="/renseignement"> Renseignement </a>
+            
+            <div class="nav_link contact_link">
+              <a href="contact.html" class="btn"> contact nous </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="MainFrame">
+
+        <div class="stickyNav">
+
+          <button class="A_sideNavOpen hidden">
+            <svg class="RAsvg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20">
+              <path d="M10,20A10,10,0,1,0,0,10,10,10,0,0,0,10,20ZM8.711,4.3l5.7,5.766L8.7,15.711,7.3,14.289l4.289-4.242L7.289,5.7Z"/>
+            </svg>
+          </button>
+
+          <div class="stickyNavCenter">
+
+            <button class="NavBut Main">
+              <a href="/adminPanelMain"><svg fill="#171924" height="35px" width="35px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                viewBox="0 0 330.242 330.242" xml:space="preserve">
+             <path d="M324.442,129.811l-41.321-33.677V42.275c0-6.065-4.935-11-11-11h-26c-6.065,0-11,4.935-11,11v14.737l-55.213-44.999
+               c-3.994-3.254-9.258-5.047-14.822-5.047c-5.542,0-10.781,1.782-14.753,5.019L5.8,129.81c-6.567,5.351-6.173,10.012-5.354,12.314
+               c0.817,2.297,3.448,6.151,11.884,6.151h19.791v154.947c0,11.058,8.972,20.053,20,20.053h62.5c10.935,0,19.5-8.809,19.5-20.053
+               v-63.541c0-5.446,5.005-10.405,10.5-10.405h42c5.238,0,9.5,4.668,9.5,10.405v63.541c0,10.87,9.388,20.053,20.5,20.053h61.5
+               c11.028,0,20-8.996,20-20.053V148.275h19.791c8.436,0,11.066-3.854,11.884-6.151C330.615,139.822,331.009,135.161,324.442,129.811z"
+               />
+             </svg></a>
+           </button>
+ 
+           <button class="NavBut questions">
+              <a href="/adminPanelQst">
+                <svg width="48px" height="48px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 21V19.5C4 16.4624 6.46243 14 9.5 14H12.5C15.5376 14 18 16.4624 18 19.5V21M7 21V18M15 21V18M16.5 6L16.8367
+                   5.49493C17.1969 4.95461 17.9371 4.82782 18.4566 5.21745C19.0073 5.63047 19.0645 6.43549 18.5778 6.92224L17.8536 
+                   7.64645C17.6272 7.87282 17.5 8.17986 17.5 8.5M17.5 10V10.2M13.8281 4.89801C14.6435 3.74945 15.9842 3 17.5 3C19.9853 
+                   3 22 5.01472 22 7.5C22 9.98528 19.9853 12 17.5 12C16.2549 12 15.1279 11.4943 14.3131 10.6771M15 8.00001C15 5.79086
+                    13.2091 4 11 4C8.79086 4 7 5.79086 7 8.00001C7 10.2092 8.79086 12 11 12C11.8312 12 12.6032 11.7465 13.2429 11.3125C14.3033
+                     10.5931 15 9.37794 15 8.00001Z" stroke="#171924" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/>
+                  </svg>
+                </a>
+           </button>
+           <button class="NavBut blog">
+          <a href="/BlogEditor">
+            <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                 viewBox="0 0 32 32" xml:space="preserve">
+              <style type="text/css">
+                   .st0{fill:none;stroke:#171924;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                   .st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+                   .st2{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:5.2066,0;}
+              </style>
+              <polygon class="st0" points="17.8,17 15,17 15,14.2 25.6,3.6 28.4,6.4 "/>
+             <path class="st0" d="M25,10v13c0,1.1-0.9,2-2,2H9c-1.1,0-2-0.9-2-2V9c0-1.1,0.9-2,2-2h13.2"/>
+            </svg>
+          </a>
+          </button>
+        </div>
+
+        </div>
+
+        <div class="shiftedBody">
+          
+          <div class="programWrapper">
+              
+            <h1 class="A_title">MAIN</h1>
+            <div class="proram_note">
+              
+              <div class="mainprogrambox">
+                
+                <form  class="frm" method="POST">
+                    <button class="a_mainSubmit"> SUBMIT(sauvgarder) </button>
+                      
+                    <div class="dayprogram">
+
+                      <p>Dimanche</p>
+                      <input type="text" class="dayStatus" name="dimanche" list="scripts" placeholder="<%=jsonObj.dimanche%>">
+                      <datalist id="scripts">
+                        <option value="Ouvert"></option>
+                        <option value="Fermé"></option> 
+                      </datalist>
+                    </div>
+        
+                    <hr>
+        
+                    <div class="dayprogram">
+                      <p>Lundi</p>
+                      <input type="text" class="dayStatus" name="lundi" list="scripts" placeholder="<%=jsonObj.lundi%>">
+                      <datalist id="scripts">
+                        <option value="Ouvert"></option>
+                        <option value="Fermé"></option> 
+                      </datalist>
+                    </div>
+        
+                    <hr>
+        
+                    <div class="dayprogram">
+                      <p>Mardi</p>
+                      <input type="text" class="dayStatus" name="mardi" list="scripts" placeholder="<%=jsonObj.mardi%>">
+                      <datalist id="scripts">
+                        <option value="Ouvert"></option>
+                        <option value="Fermé"></option> 
+                      </datalist>
+                    </div>
+        
+                    <hr>
+        
+                    <div class="dayprogram">
+                      <p>Mercredi</p>
+                      <input type="text" class="dayStatus" name="mercredi" list="scripts" placeholder="<%=jsonObj.mercredi%>">
+                      <datalist id="scripts">
+                        <option value="Ouvert"></option>
+                        <option value="Fermé"></option> 
+                      </datalist>
+                    </div>
+        
+                    <hr>
+        
+                    <div class="dayprogram">
+                      <p>Jeudi</p>
+                      <input type="text" class="dayStatus" name="jeudi" list="scripts" placeholder="<%=jsonObj.jeudi%>">
+                      <datalist id="scripts">
+                        <option value="Ouvert"></option>
+                        <option value="Fermé"></option> 
+                      </datalist>
+                    </div>
+        
+                    <hr>
+        
+                    <div class="dayprogram">
+                      <p>Vendredi</p>
+                      <input type="text" class="dayStatus" name="vendredi" list="scripts" placeholder="<%=jsonObj.vendredi%>">
+                      <datalist id="scripts">
+                        <option value="Ouvert"></option>
+                        <option value="Fermé"></option> 
+                      </datalist>
+                    </div>
+        
+                    <hr>
+        
+                    <div class="dayprogram">
+                      <p>Samedi</p>
+                      <input type="text" class="dayStatus" name="samedi" list="scripts" placeholder="<%=jsonObj.samedi%>">
+                      <datalist id="scripts">
+                        <option value="Ouvert"></option>
+                        <option value="Fermé"></option> 
+                      </datalist>
+                    </div>
+        
+                    <hr>
+
+                </form>
+              </div>
+                        
+                  <div class="doctorNote">
+                    <form class="frm2" method="POST">
+                      <h4>Note du Docteur</h4>
+
+                      <c class="NoteButSet">
+                        <button type="submit" class="a_noteSubmit">SUBMIT(sauvgarder)</button>
+                        <button  class="a_mainDelete">delete</button> 
+                      </c>
+                        
+                      <textarea class="NoteTextInput"  type="text" name="NoteTextInput"><%=jsonObj.texts[0] %></textarea>
+                    </form>
+                    </div>
+            </div>
+          </div>
+
+
+          <h1 class="A_title">Users CRUD</h1>
+
+          <div class="users UsersCrud ">
+            
+            <% for ( var user of allUsers) {%>
+
+              <div class="Operations"> 
+
+                <div class="op delUser">x</div>
+                <div class="op upGradeUser">+</div>
+                <div class="op downGradeUser">-</div>
+                <div class="op userProfil">u</div>
+
+                <div class="DelConfirme user<%=user._id %>">
+                  <p>Confirmez votre action:</p> 
+                  <span>
+                     <div class="delConfirmeButton">confirmer</div> - <div class="delCancelButton">annuler</div>
+                  </span>
+                </div>
+
+                <div class="userID"><p>----UserID: <span class="pureUid"><%= user._id%></span> </p></div>
+
+              </div>  
+                
+
+              <div class="userBlock">
+
+                  <span class="user_first_name">
+                    <%= user.first_name  %>
+                  </span>
+
+                  <span class="user_last_name">
+                    <%= user.last_name  %>
+                  </span>
+
+                  <span class="user_userName">
+                    <%= user.user_name  %>
+                  </span>
+
+                  <span class="user_email">
+                    <%= user.email  %>
+                  </span>
+
+                  <span class="user_status">
+                    <%= user.status  %>
+                  </span>
+
+                  <span class="user_role">
+                    <%= user.role  %>
+                  </span>
+                </div>
+              <% } %>
+            
+          </div>
+
+        
+        
+        </div>
+      </div>
+ 
+
+      </div>
+      
+
+       <!-- 3 -->
+ 
+ 
+      <!-- END header Nav bar  -->
+    
+      <script src=" /responsiveJs_adminPanel.js"></script>
+      <script src="/fetchRequest.js"></script> 
+      <script src="/utilsJs.js"></script> 
+      <script src="/A_sideBarEvents.js"></script>
+      <script src="/userCrudjs/crud.js"></script>
+       
+     
+</body>
+</html>

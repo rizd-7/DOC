@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminLogin</title>
+    <link rel="stylesheet" type="text/css" href="./css/adminLoginForm.css ">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Maven+Pro:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+     
+</head>
+<body>
+  
+    <div class="content">
+         <div class="form">
+            <h1>Welcome Admin!</h1>
+            <label for="form" ><%=errorMessage %></label>
+            <form name="form" action="/A_login" method="POST">
+
+                <div class="inputBox">
+                    <input class="inputField" type="text" name="emailAdress" required="required">
+                    <span class="spann">Email</span>  
+                </div>
+         
+                <div class="inputBox">
+                    <input class="inputField" type="password" name="password"  required="required">
+                    <span class="spann">password</span>
+                </div>
+                
+                <button type="submit">submit</button>
+            </form>
+            
+            <div class="logo">
+                <img src="./assets/logo.png" alt="logo">
+            </div>
+            
+         </div> 
+    </div>
+
+    <script src="/adminLoginForm.js"></script>
+</body>
+</html>

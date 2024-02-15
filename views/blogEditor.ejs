@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Maven+Pro:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+ 
+<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+<link rel="stylesheet" type="text/css" href="./css/blogPostEditor.css">
+<link rel="stylesheet" type="text/css" href="./css/blog.css">
+<link rel="stylesheet" type="text/css" href="./css/index.css">
+<link rel="stylesheet"  href="./dist/output.css">
+ 
+
+    <title>Doc</title>
+</head>
+<body>
+
+    <!-- START NAV BAR -->
+    <div class="navBarWrapper">
+        <div class="navBarCenter">
+
+          <div class="nav_header">
+            
+            <a href="/" class="nav-logo">
+              <img class="logo" src="./assets/logo.png" alt="logo">
+            </a>
+            
+            <div class="space-y-2">
+              <div class="w-8 h-0.5  border-2 border-black rounded-sm "></div>
+              <div class="w-8 h-0.5  border-2 border-black rounded-sm"></div>
+              <div class="w-8 h-0.5  border-2 border-black rounded-sm"></div>
+            </div>
+
+          </div>
+
+          <div class="nav_links">
+
+            <a href="/" class="Border" > Main </a>
+            <a href="/blog" class="Border" > Blog </a>
+            <a href="#" class="Border" > Horaires </a>
+            <a href="/renseignement"> Renseignement </a>
+            
+            <div class="nav_link contact_link">
+              <a href="contact.html" class="btn"> contact nous </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+     <!-- END NAV BAR -->
+
+     <div class="sideNavBar ">  
+
+        <div class="logoV2">
+          <img src="./assets/logoV2.png" alt="logoV2"> 
+        </div>
+
+        <div class="btnSet">
+
+          <div class="profil">
+            <img src="./assets/profilPic.jpeg" alt="profilPic">
+          </div>
+
+          <div class="BlogAndQst">       
+           <h1>ALL</h1>  
+          </div>
+
+          <div class="Add">
+            <svg fill="#9193A6" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	          width="800px" height="800px" viewBox="0 0 45.402 45.402"
+	            xml:space="preserve">
+<g>
+	<path d="M41.267,18.557H26.832V4.134C26.832,1.851,24.99,0,22.707,0c-2.283,0-4.124,1.851-4.124,4.135v14.432H4.141
+		c-2.283,0-4.139,1.851-4.138,4.135c-0.001,1.141,0.46,2.187,1.207,2.934c0.748,0.749,1.78,1.222,2.92,1.222h14.453V41.27
+		c0,1.142,0.453,2.176,1.201,2.922c0.748,0.748,1.777,1.211,2.919,1.211c2.282,0,4.129-1.851,4.129-4.133V26.857h14.435
+		c2.283,0,4.134-1.867,4.133-4.15C45.399,20.425,43.548,18.557,41.267,18.557z"/>
+</g>
+</svg>
+          </div>
+
+        </div>
+
+        <div class="Qst">
+          <!-- <img src="./assets/question.png"> -->
+          <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 17V16.9929M12 14.8571C12 11.6429 15 12.3571 15 9.85714C15 8.27919 13.6568 7 12 7C10.6567 7 9.51961 7.84083 9.13733 9M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#9193A6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+     </div>
+      
+     <!-- BODY CONTENT -->
+      <div class="bodyContt">
+          
+        <div class="BlogFormating">
+
+            <form class="blogForm" action="/blog/publishBlog" method="POST">
+                <p>Entrez des mots du champ lexical du sujet de votre blog ,Séparez les mots par ','</p>
+                <input type="text" name="ref" class="refWords" placeholder="ex: cerveau,nerfs,..etc" required="true">
+                <textarea name="blog" id="my-expressjs-tinymce-app" cols="30" rows="10"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+
+        <div class="windowPop hidden">
+
+          <button class="close">&times;</button>
+
+          <div class="addQuestion">
+            <h1 class="text-3xl">Ajouter une question</h1>
+            <p>vous pouvez nous comuniquer vos questionnement, on se chargera d'y répondre </p>
+            <button>Ajouter</button>
+          </div>
+ 
+          <div class="addBlogPost ">
+            <h1 class="text-3xl" >Ajouter un blog post</h1>
+            <p>partagez votre savoir, apportez votre pière a l'difice </p>
+            <button>Ajouter</button>
+          </div>
+
+        </div>
+        <div class="blr hidden "> </div>
+
+
+      </div>
+     <!-- END BODY CONTENT -->
+
+    
+      <script src=" ./responsiveJs_adminPanel.js"></script>
+      <script src="./window_pop.js"></script>
+      <!-- Script element sourcing TinyMCE -->
+    <script type="application/javascript" src= "/tinymce/tinymce.min.js"></script>
+    <!-- Script element sourcing the TinyMCE configuration -->
+    <script type="application/javascript" src= "./configs/my-tinymce-config.js"></script>
+       
+</body>
+</html>

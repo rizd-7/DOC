@@ -1,0 +1,327 @@
+:root {
+    /* COLORS */
+    --BgColor:#F1F1F1;
+    --Prim_0:#52B788;
+    --TextColor:#2D3047;
+    --BoxesGrey:#E9E9E9;
+    --LinkBlue:#4132C8;
+    --CallToActionOrange:#DE3116;
+    --green-dark: #0f5132;
+    --red-dark: #842029;
+    /* Fonts */
+    --HeadingType1Font:'Maven Pro' , sans-serif;
+    --HeadingType2Font:'Bebas Neue', sans-serif;
+    --TextFont: 'sans source pro', sans-serif;
+    /* Others */
+    --letterSpacing: 1px;
+    --transition: 0.3s ease-in-out all;
+    --shadow-1:0 8px 60px 5px  rgba(0, 0, 0, 0.226);
+  }
+
+body{
+    position: relative;
+}
+
+.MainFrame{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;   
+}
+
+.stickyNav{    
+    width: 120px;    
+    height: 100vh; 
+    border-right:2px solid var(--TextColor);
+    background-color: rgb(223, 223, 223);
+    box-shadow: var(--shadow-1);
+    position: fixed;
+}
+
+.shiftedBody{
+    margin-left: 100px;
+    width: 100%;
+}
+
+/* ---------------------- */
+
+.stickyNavCenter{
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    min-height: 40%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 7em;
+    gap: 15px;
+}
+
+/* board style */
+.a_mainSubmit{
+    font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 2em;
+}
+
+.a_noteSubmit{
+    font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 2em;
+}
+
+.a_noteSubmit:hover{
+    color: var(--Prim_0);   
+}
+
+.a_mainSubmit:hover{
+    color: var(--Prim_0);     
+}
+
+.a_mainDelete{
+    font-weight: bold;
+}
+
+.a_mainDelete:hover{
+    color: darkred;
+}
+
+
+.dayprogram input{
+   width: 90px;
+   height: 40px; 
+}
+
+
+.doctorNote textarea {
+    height: 15em;
+}
+.doctorNote  {
+    height: fit-content;
+    
+}
+.dayStatus{
+    padding-left: 0.5em;
+}
+
+
+.frm2{
+    display: flex;
+    flex-direction: column;
+}
+
+.frm2 .NoteButSet{
+    display: flex;
+    flex-direction: column; 
+    height: fit-content; 
+    margin: 1.5em 0em;
+    gap: 10px;
+}
+
+.frm2 .NoteButSet button{
+    margin: 0;
+   
+}
+
+/* end board style */
+
+.NavBut{
+    height: 60px;
+    width: 60px;
+    border:1px solid black;
+    align-items: center;
+    border-radius:15px ;
+    background-color: #52b78888;
+}
+
+.NavBut svg{
+  margin: auto;
+}
+ 
+.NavBut:hover ,.a_active{
+    background-color:var(--Prim_0);
+}
+
+.A_sideNavOpen{
+    position:absolute;
+    top: 10px;
+    right: -9px;
+}
+
+.hidden{
+    display: none;
+}
+
+
+/* Extra general style */
+
+.A_title{
+    font-size: 45px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.margin1p5{
+    margin-bottom: 1.5em;
+}
+
+.colorGrey{
+    color: gray;
+}
+
+/* End extra general style */
+ 
+ 
+
+.users{  
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    min-width: none;
+    margin: auto;
+    padding:0em 0em 0em 2em;
+ 
+}
+
+ 
+ 
+.userBlock{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    border:1px  solid black;
+    margin-bottom: 2em;
+    padding: 1em;
+ 
+}
+
+.UsersCrud span{
+   overflow: hidden;
+   width: fit-content;
+    text-align: center;
+   min-width: 90px;
+}
+
+
+.user_first_name , .user_last_name, .user_userName{ 
+    width: 120px;   
+}
+
+.user_email{
+    min-width: 180px;
+    width: 18%;
+}
+
+.user_status, .user_role{
+    width: 10%;  
+}
+
+.Operations .op{
+    border-radius:30px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    width: 20px;
+    height:20px;
+    cursor: pointer;
+}
+
+.Operations  .op:hover{
+    box-shadow: 0 0px 2px 2px  rgba(255, 174, 0, 0.952);
+}
+
+.delUser{
+ background-color: #842029;
+}
+
+.upGradeUser{  
+    background-color: rgb(100, 228, 100);
+}
+
+.downGradeUser{
+    background-color: rgb(228, 228, 100);
+}
+
+.userProfil{
+    background-color: rgb(138, 138, 190);
+}
+
+.Operations{
+    display:flex;
+}
+
+.DelConfirme{
+
+    margin: 0em 2em;
+    display: none;
+    flex-direction: row;
+}
+ 
+
+.DelConfirme span{
+    margin: 0em 2em;
+    display: flex;
+}
+
+  
+.delConfirmeButton, .delCancelButton{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.delConfirmeButton:hover{
+    color: var(--Prim_0);
+}
+
+.delCancelButton:hover{
+    color: #ab2732;
+}
+
+
+
+@media screen and (max-width:742px){
+
+    .A_sideNavOpen{
+        display: block;
+        fill: #8b8b8b; 
+    }
+
+    .stickyNav{
+        transform: translateX(-70px);
+        transition: var(--transition);
+    }
+
+    .RAsvg{
+        transition: var(--transition);
+    }
+
+    .shiftedBody{
+        margin-left: 20px;
+    }
+
+    /* responsive for crud op */
+     .user_email{
+        display: none;
+    }
+    .users{
+        padding: 0em 0em 0em 3em;
+    }
+
+    /* END crud resposive */
+}
+
+
+@media screen and (max-width: 992px){
+    .user_userName  {
+        display: none;
+    }
+}
+
