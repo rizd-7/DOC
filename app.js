@@ -30,51 +30,39 @@ app.use((req, res, next) => {
 
 const MainPageRoute = require("./routes/MainRenseign")
 const adminLoginRoute = require('./routes/A_loginForm.js');
+const A_login = require('./routes/A_login');
+const adminPanel=require("./routes/adminPanel");
+const usersCrud = require("./routes/usersCrud");
+const postsRoute=require("./routes/posts.js");
+const UserLoginFormRoute = require("./routes/U_loginForm")
+const U_loginLogicRoute = require("./routes/U_login");
+const blogEditorRoute = require("./routes/blogEditing")
+const UsersRegistrationRoute=require("./routes/U_register");
+const mainOp_Route = require("./routes/mainRouter.js")
 
-// ???
+
+const auth = require("./middleware/auth");
+const authTrois = require("./middleware/auth3");
+const DayStatus = require('./model/dayStatusSchema');
+
 app.use("/",MainPageRoute);
 app.use("/renseignement",MainPageRoute);
 app.use(adminLoginRoute);
+app.use('/',postsRoute); 
+app.use("/",UserLoginFormRoute)
+app.use("/",U_loginLogicRoute);
+app.use("/blog/blogEditor",authTrois,blogEditorRoute);
 
-const auth = require("./middleware/auth");
-const A_login = require('./routes/A_login');
-const adminPanel=require("./routes/adminPanel");
-const DayStatus = require('./model/dayStatusSchema');
 
 
 // does the login =(comapre pw and userName and creat jwt)
 app.use(upload.none(),A_login);
 app.use('/adminPanelMain',auth,adminPanel) // /adminPanelMain branch is locked with auth 
-const usersCrud = require("./routes/usersCrud");
 app.use("/adminPanelMain",auth,usersCrud);
-
-const postsRoute=require("./routes/posts.js");
-app.use('/',postsRoute); 
-
-const UserLoginFormRoute = require("./routes/U_loginForm")
-app.use("/",UserLoginFormRoute)
-
-//The route that handle token creation and verification
-const U_loginLogicRoute = require("./routes/U_login");
-app.use("/",U_loginLogicRoute);
-
-//Email Verification 
-const emailVerificator = require("./routes/emailVerif");
-app.use("/",emailVerificator);
-
-// I want blog/blogEditor/{something} to be locked 
-const authTrois = require("./middleware/auth3");
-const blogEditorRoute = require("./routes/blogEditing")
-app.use("/blog/blogEditor",authTrois,blogEditorRoute);
- 
-const authdeux = require("./middleware/auth2");
-app.get("/blog/addQst",authdeux,(req,res)=>{
-    res.status(200).render("QuestionsEditor.ejs")
-})
-
-//Getting regiration page and doing some logic 
-const UsersRegistrationRoute=require("./routes/U_register");
 app.use("/",UsersRegistrationRoute);
+app.use("/",mainOp_Route);
+ 
+ 
 
 app.use("/",(req,res)=>{
     try {
@@ -87,7 +75,6 @@ app.use("/",(req,res)=>{
 
 const port = 3000;
 const start = async() => {
-
     try {   
         await connectDB(process.env.MONGO_URI);
         console.log("connected to DataBase");
@@ -97,7 +84,6 @@ const start = async() => {
     } catch (error) {
         console.log(error);
     }
-
 }
 start();
 

@@ -27,6 +27,8 @@ iframe{
   height: 90%;
 }
 
+
+
 :root {
   /* COLORS */
   --BgColor:#F1F1F1;
@@ -107,6 +109,10 @@ small, .text_small {
 
 a {
   text-decoration: none;
+}
+
+button .aHero:hover {
+  color: var(--CallToActionOrange);
 }
 
 ul {
